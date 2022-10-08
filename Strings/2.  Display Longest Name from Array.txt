@@ -1,0 +1,17 @@
+
+class GFG {
+    
+    String s ;
+    int max =0;
+    String longest(String names[], int n) {
+        
+        
+        for(int i=0;i<names.length;i++){
+            if(names[i].length()>max){
+                max =names[i].length();
+                s =names[i];
+            }
+        }
+        return s;
+    }
+}

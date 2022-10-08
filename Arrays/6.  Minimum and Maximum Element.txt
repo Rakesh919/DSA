@@ -1,0 +1,34 @@
+
+//User function Template for Java
+
+/*
+ class pair  
+{  
+    long first, second;  
+    public pair(long first, long second)  
+    {  
+        this.first = first;  
+        this.second = second;  
+    }  
+} */
+
+class Compute 
+{
+    static pair getMinMax(long a[], long n)  
+    {
+        //Write your code here
+        long minimum =a[0];
+        long maximum =a[0];
+        for(int i=0;i<n;i++){
+            if(a[i]>maximum){
+                maximum =a[i];
+            }
+            else if(a[i]<minimum){
+                minimum =a[i];
+            }
+        }
+        
+        pair s = new pair(minimum,maximum);
+        return s;
+    }
+}
