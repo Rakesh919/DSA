@@ -1,6 +1,7 @@
 
 //User function Template for Java
 
+//😎😎   First we have to sort array and then multiply each element by it's index and return the sum of all elements..
 
 class Solution{
     
