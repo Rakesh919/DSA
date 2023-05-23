@@ -1,0 +1,49 @@
+
+
+//User function Template for Java
+
+class Solution
+{
+    //Function to sort the binary array.
+    static void binSort(int A[], int N)
+    {
+        // add your code here
+        int zero=0;
+        
+        for(int i=0;i<N;i++){
+            if(A[i]==0)
+            zero++;
+            
+        }
+        
+        
+        //Override the values of array..
+        
+        for(int i=0;i<N;i++){
+            if(i<zero){
+            A[i]=0;
+            }
+            if(i>=zero && i<N){
+                A[i]=1;
+            }
+            
+        }
+        
+        // Also Provide the same output 😁😁
+       /*  int j=-1;
+        for(int i=0;i<N;i++){
+            if(A[i]<1){
+                j++;
+                int temp=A[j];
+                A[j]=A[i];
+                A[i]=temp;
+            }
+        }
+        */
+        
+        
+        /**************
+        * No need to print the array
+        * ************/
+    }
+}

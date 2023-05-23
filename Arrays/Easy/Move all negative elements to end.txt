@@ -1,0 +1,31 @@
+// Move all negative elements to the end of the array..
+
+//User function Template for Java
+
+class Solution {
+    
+    public void segregateElements(int arr[], int n)
+    {
+        // Your code goes here
+       int e=n-1;
+       int ar[] =new int[n];
+       for(int i=n-1;i>=0;i--){
+           if(arr[i]<0){
+               ar[e]=arr[i];
+               e--;
+           }
+       }
+       int s=0;
+       for(int i=0;i<n;i++){
+           if(arr[i]>0){
+              ar[s]=arr[i];
+              s++;
+           }
+       }
+       
+       for(int i=0;i<n;i++){
+           arr[i] =ar[i];
+       }
+        
+    }
+}

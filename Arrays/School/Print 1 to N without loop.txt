@@ -1,0 +1,20 @@
+// Print 1 to n without loop using recursion..
+
+//User function Template for Java
+
+
+
+class Solution
+{
+    
+  public void printNos(int N)
+    {
+        //Your code here
+        if(N==0)
+        return ;
+        
+        printNos(N-1);
+        System.out.print(N+" ");
+        
+    }
+}

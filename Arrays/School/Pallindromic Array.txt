@@ -1,0 +1,41 @@
+// Pallindromic array..
+
+
+/* Input:
+5
+111 222 333 444 555
+
+Output:
+1  */
+
+/*Complete the Function below*/
+class GfG
+{
+public static int palinArray(int[] a, int n)
+    {
+           //add code here.
+           for(int i=0;i<n;i++){ 
+
+            int temp=a[i];
+            int pal =reverse(a[i]);
+
+            if(temp!=pal)
+            return 0;
+
+           }
+           return 1;
+    }
+    
+    static int reverse(int n){
+        
+        int sum =0,rem =0,rev=0;
+        
+        while(n!=0){
+            rem =n%10;
+            rev= rev*10+rem;
+            n=n/10;
+        }
+        return rev;
+        
+    }
+}

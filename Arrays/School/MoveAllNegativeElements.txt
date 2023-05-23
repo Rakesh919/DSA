@@ -1,0 +1,29 @@
+// Java Program to Move all negative elements ..😎😎
+class Solution {
+    
+    public void segregateElements(int arr[], int n)
+    {
+        // Your code goes here
+        
+         int temp[] =new int[n];
+       int j=0;
+       for(int i=0;i<n;i++){
+        if(arr[i]>0){
+            temp[j]=arr[i];
+            j++;
+        }
+       }
+       int h=n-1;
+       for(int k=n-1;k>=0;k--){
+        if(arr[k]<0){
+            temp[h] =arr[k];
+            h--;
+        }
+       }
+
+       for(int i=0;i<n;i++){
+        arr[i] =temp[i];
+       }
+       
+    }
+}
