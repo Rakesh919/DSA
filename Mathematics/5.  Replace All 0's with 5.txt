@@ -1,0 +1,18 @@
+
+class GfG {
+    int convertfive(int num) {
+        // Your code here
+       int rem =0,rev =0;
+       int i=0;
+       
+       while(num>0){
+           rem =num%10;
+           if(rem ==0)
+           rem =5;
+           rev =(int)((int)rev+rem*(Math.pow(10,i)));
+           num =num/10;
+           i++;
+       }
+       return rev;
+    }
+}

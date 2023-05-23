@@ -1,0 +1,26 @@
+// Factorial of a number..
+
+class Solution{
+    static long factorial(int N){
+        // code here
+        if(N==0)
+        return 1;
+        
+        // long big =factorial(N-1);
+        // long small =N*big;
+        
+        // return small;
+        
+        // Another way to find factorial using recursion.. 😎😎
+        
+        // return N*factorial(N-1);
+        
+        
+        // Another way 😎😎😎
+        long sum =1;
+        for(long i=1;i<=N;i++){
+            sum =sum*i;
+        }
+        return sum;
+    }
+}
