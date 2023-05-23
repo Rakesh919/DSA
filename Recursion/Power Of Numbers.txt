@@ -1,0 +1,21 @@
+
+
+//User function Template for Java
+
+class Solution
+{
+        
+    long power(int N, int R) {
+		if (R == 0)
+			return 1;
+
+		long temp = power(N, R / 2);
+		long evenPower = (temp * temp) % 1000000007;
+
+		if (R % 2 == 0)
+			return evenPower;
+
+		return (N * evenPower) % 1000000007;
+	}
+
+}
