@@ -1,0 +1,20 @@
+
+class Solution {
+    static String revStr(String S) {
+        // code here
+        
+        char ch[] =S.toCharArray();
+        
+        int start =0,end =ch.length-1;
+        while(start<end){
+            char a ;
+            a =ch[start];
+            ch[start] =ch[end];
+            ch[end] =a;
+            start++;
+            end--;
+        }
+        String s =String.valueOf(ch);
+        return s;
+    }
+}
