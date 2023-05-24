@@ -1,0 +1,10 @@
+// Java Program to find gcd(greatest common factor)/hcf of two numbers..
+
+
+int gcd(int a,int b){
+ 
+  if(b==0)
+  return a;
+  
+  return gcd(b,a%b);
+}
