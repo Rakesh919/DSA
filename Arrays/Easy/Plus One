@@ -1,0 +1,30 @@
+// Java Program to add one in an array
+
+
+
+class Solution {
+    static ArrayList<Integer> increment(ArrayList<Integer> arr , int N) {
+    
+    
+    for(int i=arr.size()-1; i>=0; i--){
+        // if element is less than 9 just add 1
+        if(arr.get(i) < 9){
+           arr.set(i,arr.get(i)+1); 
+           return arr;
+        }
+        // if element is 9 than set 0 at that index
+        arr.set(i,0); 
+    }    
+    
+     //control comes here in-case all elements are 9.
+     ArrayList<Integer> list = new  ArrayList<Integer>();
+     list.add(1);
+        
+     for(int i=0; i<N; i++){
+         list.add(arr.get(i));
+     }
+
+     return list;
+     
+    }
+}
